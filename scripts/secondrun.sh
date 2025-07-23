@@ -104,8 +104,7 @@ sudo apt full-upgrade -y
 # doing that on the boot partition might cause problems, e.g. when the build script tries to create hard links to the root partition
 echo "changing to home directory of current user"
 cd ~
-# install Python 3.12.3
-#eval "${BOOT_PATH}/install_python_3-12.sh"
+# install latest Python version, homeassistant is quite demanding on this
 eval "${BOOT_PATH}/install_latest_python.sh"
 # install homeassistant core
 eval "${BOOT_PATH}/install_hacore.sh"
